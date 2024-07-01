@@ -1,0 +1,4 @@
+#Discord Link to show to user when executing /dclink
+dclink: "https://discord.gg/YOURLINK"
+#Servers to connect to. Used to show the user possible arguments for /transfer
+servers: "server1, server2, server3..."

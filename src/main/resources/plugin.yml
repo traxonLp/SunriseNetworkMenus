@@ -1,0 +1,21 @@
+name: SunriseNetworkMenus
+version: '${project.version}'
+main: de.traxonlp.sunrisenetworkmenus.SunriseNetworkMenus
+author: Traxon_LP aka. Julian
+api-version: '1.21'
+libraries:
+  - com.google.guava:guava:30.1.1-jre
+  - com.google.code.gson:gson:2.8.6
+
+
+commands:
+  selector:
+    description: Opens the Selector Menu
+    permission: snm.selector
+  dclink:
+    description: Sends discord link to executor
+    permission: snm.dclink
+
+  transfer:
+    description: transfers player to other server
+    permission: snm.transfer

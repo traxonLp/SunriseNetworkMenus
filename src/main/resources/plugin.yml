@@ -15,7 +15,9 @@ commands:
   dclink:
     description: Sends discord link to executor
     permission: snm.dclink
-
   transfer:
     description: transfers player to other server
     permission: snm.transfer
+  getip:
+    description: Returns the IPv4 Adress of a Players connection
+    permission: snm.getip

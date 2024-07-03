@@ -17,15 +17,15 @@ import static net.kyori.adventure.text.minimessage.MiniMessage.miniMessage;
 public class transferPlayerCommand implements CommandExecutor {
     @Override
 
-    public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] args) {
+    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String s, @NotNull String[] args) {
 
-        Player player = (Player) commandSender;
+        Player player = (Player) sender;
         String server = args[0];
         MiniMessage mm = miniMessage();
         ByteArrayDataOutput out = ByteStreams.newDataOutput();
         String servers = SunriseNetworkMenus.getInstance().getConfig().getString("servers");
 
-        if (commandSender instanceof Player) {
+        if (sender instanceof Player) {
 
             if (args.length == 1) {
                 out.writeUTF("Connect");

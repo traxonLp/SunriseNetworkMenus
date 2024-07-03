@@ -1,6 +1,7 @@
 package de.traxonlp.sunrisenetworkmenus;
 
 import de.traxonlp.sunrisenetworkmenus.commands.discordCommand;
+import de.traxonlp.sunrisenetworkmenus.commands.getIpCommand;
 import de.traxonlp.sunrisenetworkmenus.commands.selectorCommand;
 import de.traxonlp.sunrisenetworkmenus.commands.transferPlayerCommand;
 import de.traxonlp.sunrisenetworkmenus.listeners.InventoryClickListener;
@@ -49,5 +50,6 @@ public final class SunriseNetworkMenus extends JavaPlugin {
         getCommand("selector").setExecutor(new selectorCommand());
         getCommand("dclink").setExecutor(new discordCommand(this));
         getCommand("transfer").setExecutor(new transferPlayerCommand());
+        getCommand("getip").setExecutor(new getIpCommand());
     }
 }
